@@ -4,15 +4,15 @@ docker -h
 ```
 ## Management Commands:
 
-```builder``` Manage builds
+**builder** Manage builds
 
-```config``` Manage Docker configs
+**config** Manage Docker configs
 
-```container``` Manage containers
+**container** Manage containers
 
-```engine``` Manage the docker engine
+**engine** Manage the docker engine
 
-```image``` Manage images
+**image** Manage images
 
 ```network``` Manage networks
 
