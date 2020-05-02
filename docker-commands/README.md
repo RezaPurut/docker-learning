@@ -4,7 +4,7 @@ docker -h
 ```
 ## Management Commands:
 
-**builder** Manage builds
+**```builder```** Manage builds
 
 **config** Manage Docker configs
 
