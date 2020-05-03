@@ -1,4 +1,4 @@
-# Docker Commands
+# Docker Commands (-h for help)
 ```
 docker -h
 ```
