@@ -2,7 +2,7 @@
 ```
 docker -h
 ```
-## Management Commands:
+### Management Commands:
 **`builder`** Manage builds
 
 **`config`** Manage Docker configs
@@ -33,7 +33,7 @@ docker -h
 
 **`volume`** Manage volumes
 
-## Those with ``` docker image ``` command:
+### Those with ``` docker image ``` command:
 **`build`** Build an image from a dockerfile
 
 **`history`** Show the history of an image
@@ -58,7 +58,7 @@ docker -h
 
 **`tag`** Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
 
-## Those with ``` docker container ``` command:
+### Those with ``` docker container ``` command:
 **`attach`** Attach local standard input, output, and error streams to a running container
 
 **`commit`** Create a new image from a container's changes
