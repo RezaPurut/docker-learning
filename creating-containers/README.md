@@ -1,5 +1,6 @@
 # Creating Containers
 ``` docker container run ``` or ``` docker run ```
+
 This command creates a container from a given image and starts the container using a given command
 
 **`--help`** Print usage
@@ -30,3 +31,6 @@ This command creates a container from a given image and starts the container usi
 
 ### Create a container, name it and run it in the background
 ``` docker container run –d –name myContainer busybox ```
+
+## Reference
+https://stackoverflow.com/questions/51247609/what-is-the-difference-between-docker-run-and-docker-container-run
