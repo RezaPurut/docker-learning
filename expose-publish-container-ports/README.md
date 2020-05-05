@@ -1,5 +1,5 @@
 # Exposing and Publishing Container Ports
-1. Exposing means make port available to be mapped
+1. Exposing means make a port available to be mapped
 ```
 docker container run -d --expose 3000 nginx
 ```
