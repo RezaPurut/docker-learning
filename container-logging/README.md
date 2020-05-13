@@ -7,7 +7,7 @@ docker container logs [NAME]
 ```
 docker service logs [SERVICE]
 ```
-3. Logs need to be output to STDOUT and STDERR
+3. Logs need to be output to `STDOUT` and `STDERR`
 For Nginx:
 ```
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
