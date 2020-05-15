@@ -4,7 +4,7 @@
 docker network -h
 ```
 Result:
-`*connect*` - Connect a container to a network
+`**connect**` - Connect a container to a network
 `create` - Create a network
 `disconnect` - Disconnect a container from a network
 `inspect` - Display detailed information on one or more networks
