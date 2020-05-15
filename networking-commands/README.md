@@ -5,19 +5,19 @@ docker network -h
 ```
   Result:
 
-  **`connect`** - Connect a container to a network
+  * **`connect`** - Connect a container to a network
 
-  **`create`** - Create a network
+  * **`create`** - Create a network
 
-  **`disconnect`** - Disconnect a container from a network
+  * **`disconnect`** - Disconnect a container from a network
 
-  **`inspect`** - Display detailed information on one or more networks
+  * **`inspect`** - Display detailed information on one or more networks
 
-  **`ls`** - List networks
+  * **`ls`** - List networks
 
-  **`prune`** - Remove all unused networks
+  * **`prune`** - Remove all unused networks
 
-  **`rm`** - Remove one or more networks
+  * **`rm`** - Remove one or more networks
 
 
 2. List all Docker networks on the hos
