@@ -4,6 +4,7 @@
 docker network -h
 ```
 Result:
+
 **`connect`** - Connect a container to a network
 
 **`create`** - Create a network
