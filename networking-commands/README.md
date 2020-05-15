@@ -19,6 +19,7 @@ docker network -h
 
   **`rm`** - Remove one or more networks
 
+
 2. List all Docker networks on the hos
 ```
 docker network ls
