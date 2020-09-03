@@ -62,3 +62,50 @@ docker container run -d --name network-test02 --ip 10.1.4.102 --network br04 ngi
 ```
 docker container inspect network-test02 | grep IPAddr
 ```
+# Networking two containers
+1. Create a new bridge network. internal flag telling docker we do not want network to be bound to any interfaces.
+```
+docker network create -d bridge --internal localhost
+```
+2. Create a MySQL container that is connected to localhost. `e` flag is environment flag.
+```
+docker container run -d --name test_mysql \
+-e MYSQL_ROOT_PASSWORD=P4sSw0rd0 \
+--network localhost mysql:5.7
+```
+3. Create a container that can ping the MySQL container (to test it).
+```
+docker container run -it --name ping-mysql \
+--network bridge \
+centos
+```
+4. Connect ping-mysql to the localhost network.
+```
+docker network connect localhost ping-mysql
+```
+5. Restart and attach to container. `i`-interactive, `a`-attach.
+```
+docker container start -ia ping-mysql
+```
+6. Ping the mysql container.
+```
+ping test_mysql
+```
+7. Create a container that can't ping the MySQL container
+```
+docker container run -it --name cant-ping-mysql \
+centos
+```
+8. Create a Nginx container that is not publicly accessible.
+```
+docker container run -d --name private-nginx -p 8081:80 --network localhost nginx
+```
+9. Try curl. It will fail because it is internal and not bound to any interfaces on the docker host. Can curl the private ip.
+```
+curl localhost:8081
+```
+10. Inspect private-nginx to get the private ip. Then can curl the private ip.
+```
+docker container inspect private-nginx
+curl <private-ip>
+```
